@@ -1425,7 +1425,7 @@ export async function participantsUpdate({id, participants, action}) {
       if (chat.welcome && !chat?.isBanned) {
         const groupMetadata = await m.conn.groupMetadata(id) || (conn.chats[id] || {}).metadata;
         for (const user of participants) {
-          let pp = './src/newavatar.png';
+          let pp = './src/avafer.png';
           try {
             pp = await m.conn.profilePictureUrl(user, 'image');
           } catch (e) {
@@ -1539,16 +1539,16 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '* [ ❗ ] Este comando solo puede ser utilizado por el/la propietario(a) (owner) del Bot.*',
-    owner: '* [ ❗ ] Este comando solo puede ser utilizado por el/la propietario(a) (owner) del Bot.*',
-    mods: '* [ ❗ ] Este comando solo puede ser utilizado por moderadores y el/la propietario(a) (owner) del Bot.*',
-    premium: '* [ ❗ ] Este comando solo puede ser utilizado por usarios premium y el/la propietario(a) (owner) del Bot.*',
-    group: '* [ ❗ ] Este comando solo puede ser utilizado en grupos.*',
-    private: '* [ ❗ ] Este comando solo puede ser utilizado en el chat privado del Bot.*',
-    admin: '* [ ❗ ] Este comando solo puede ser usado por admins del grupo.*',
-    botAdmin: '* [ ❗ ] Para poder usar este comando es necesario que yo sea admin.*',
-    unreg: '* 🛑 Hey!! Alto, no estas registrado 🛑 *\n\n* Para poder usar este comando debes registrarte, usa el comando:*\n*➣ #verificar nombre.edad*',
-    restrict: '* [ ❗ ] Este comando esta restringido/desactivado por desición del propietario(a) (owner) del Bot.*',
+    rowner: '*[ ❗ ] Este comando solo puede ser utilizado por el/la propietario(a) (owner) del Bot.*',
+    owner: '*[ ❗ ] Este comando solo puede ser utilizado por el/la propietario(a) (owner) del Bot.*',
+    mods: '*[ ❗ ] Este comando solo puede ser utilizado por moderadores y el/la propietario(a) (owner) del Bot.*',
+    premium: '*[ ❗ ] Este comando solo puede ser utilizado por usarios premium y el/la propietario(a) (owner) del Bot.*',
+    group: '*[ ❗ ] Este comando solo puede ser utilizado en grupos.*',
+    private: '*[ ❗ ] Este comando solo puede ser utilizado en el chat privado del Bot.*',
+    admin: '*[ ❗ ] Este comando solo puede ser usado por admins del grupo.*',
+    botAdmin: '*[ ❗ ] Para poder usar este comando es necesario que yo sea admin.*',
+    unreg: '*🛑 Hey!! Alto, no estas registrado 🛑 *\n\n* Para poder usar este comando debes registrarte, usa el comando:*\n*➣ #verificar nombre.edad*',
+    restrict: '*[ ❗ ] Este comando esta restringido/desactivado por desición del propietario(a) (owner) del Bot.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '𝑨𝒗𝒊𝒔𝒐 - 𝑨𝒍𝒆𝒓𝒕𝒂', body: '𝑺𝒉𝒂𝒅𝒐𝒘𝒔 𝑩𝒐𝒕', thumbnail: imagen1, sourceUrl: 'https://github.com/LxShadow/Vz'}}}}, aa);
