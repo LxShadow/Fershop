@@ -44,12 +44,12 @@ global.titulowm2 = `𝐅𝐞𝐫𝐁𝐨𝐭`
 global.igfg = '𝐅𝐞𝐫𝐁𝐨𝐭';
 global.wait = '*[❗]  ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 
-global.imagen1 = fs.readFileSync('./menufer.png');
-global.imagen2 = fs.readFileSync('./src/avafer.png');
-global.imagen3 = fs.readFileSync('./src/avafer.png');
-global.imagen4 = fs.readFileSync('./menufer.png');
-global.imagen5 = fs.readFileSync('./src/avafer.png');
-global.imagen6 = fs.readFileSync('./menufer.png');
+global.imagen1 = fs.readFileSync('./fershmen.png');
+global.imagen2 = fs.readFileSync('./src/fershpavat.png');
+global.imagen3 = fs.readFileSync('./src/fershpavat.png');
+global.imagen4 = fs.readFileSync('./fershmen.png');
+global.imagen5 = fs.readFileSync('./src/fershpavat.png');
+global.imagen6 = fs.readFileSync('./fershmen.png');
 
 global.mods = [];
 
